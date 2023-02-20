@@ -9,8 +9,6 @@ public class Hw {
         ArrayList <String>  aList = new ArrayList<>();
         zapolnit(link);
         zapolnit(aList);
-        test(link);
-        test(aList);
         System.out.println("время ArrayList "+ ms(aList));
         System.out.println("время LinkedList "+ ms(link));
     }
@@ -32,12 +30,11 @@ public class Hw {
     }
 
 
-    private static List test(List list){
+    private static void test(List list){
         int x = list.size() / 2;
         for (int i = 0; i < 10000; i++) {
             list.set(x,new Object());
         }
-        return list;
     }
 
 
